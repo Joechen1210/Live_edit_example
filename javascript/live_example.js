@@ -156,7 +156,7 @@ function middledivevent4()
               player.el().appendChild(parentdiv);
               player.pause();
            }
-}*/
+}
    
    closebtn.onmouseup = function()
       {
