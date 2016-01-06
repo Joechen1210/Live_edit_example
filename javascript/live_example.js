@@ -72,7 +72,7 @@ document.getElementById("right4").addEventListener("click", middledivevent4());*
 
 function middledivevent1()
 {
-   var webcontent = weburl[0],
+   var webcontent = "<iframe src='" + weburl[0] + "' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'auto'></iframe>",
        changecontent = document.getElementById("divbody");
        console.log("display " + webcontent);
                if (typeof webcontent === 'string') {
