@@ -67,9 +67,9 @@ videojs.plugin('firstPlugin', function() {
   }
 
 document.getElementById('right1').addEventListener("click", middledivevent1);
-document.getElementById("right2").addEventListener("click", middledivevent2());
-/*document.getElementById("right3").addEventListener("click", middledivevent3());
-document.getElementById("right4").addEventListener("click", middledivevent4());*/
+document.getElementById("right2").addEventListener("click", middledivevent2;
+/*document.getElementById("right3").addEventListener("click", middledivevent3);
+document.getElementById("right4").addEventListener("click", middledivevent4);*/
 
 function middledivevent1()
 {
