@@ -56,9 +56,8 @@ videojs.plugin('firstPlugin', function() {
       var closetext = document.createTextNode('x');
       closebtn.appendChild(closetext);
       
-        parentdiv.appendChild(closebtn);
-        maindiv.appendChild(bodydiv);
-        parentdiv.appendChild(maindiv);
+        parentdiv.appendChild(closebtn); 
+        
   
   for(i=1;i<=4;i++)
   {
@@ -70,22 +69,14 @@ videojs.plugin('firstPlugin', function() {
     
     console.log("create"+postdiv.className);
     player.el().appendChild(postdiv);
-    webcontent = weburl[i-1];
-    console.log("create" + webcontent);
-      if (typeof webcontent === 'string') {
-         bodydiv.innerHTML = webcontent;
-         //bodydiv.innerHTML = "<iframe src='http://htmlpreview.github.io/?https://raw.githubusercontent.com/Joechen1210/video_overlay/master/index.html' frameborder='0' border='0' cellspacing='0' style='border-style: none' align='left'></iframe>";
-           } 
-      else {
-          bodydiv.appendChild(webcontent);
-           }
+        
     console.log("create " + titletext[i-1]);
     //postdiv.on("click", middledivevent(webcontent));
     postdiv.onmouseup = function()
       {
     if (document.getElementById("divparent")) 
           {
-              console.log("diplay " + webcontent);
+              console.log("display " + webcontent);
               var changecontent = document.getElementById("divbody");
                if (typeof webcontent === 'string') {
                    changecontent.innerHTML = webcontent;
@@ -99,6 +90,17 @@ videojs.plugin('firstPlugin', function() {
            }
     else if (ishidden) 
           {
+            webcontent = weburl[i-1];
+    console.log("create" + webcontent);
+      if (typeof webcontent === 'string') {
+         bodydiv.innerHTML = webcontent;
+         //bodydiv.innerHTML = "<iframe src='http://htmlpreview.github.io/?https://raw.githubusercontent.com/Joechen1210/video_overlay/master/index.html' frameborder='0' border='0' cellspacing='0' style='border-style: none' align='left'></iframe>";
+           } 
+      else {
+          bodydiv.appendChild(webcontent);
+           }
+        maindiv.appendChild(bodydiv);
+        parentdiv.appendChild(maindiv);
               console.log("diplay " + webcontent);
               player.el().removeChild(parentdiv);
               ishidden = false;
