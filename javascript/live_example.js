@@ -67,13 +67,19 @@ videojs.plugin('firstPlugin', function() {
   }
 
 document.getElementById("right1").addEventListener("click", middledivevent1);
-/*document.getElementById("right2").addEventListener("click", middledivevent2);
-document.getElementById("right3").addEventListener("click", middledivevent3);
+document.getElementById("right2").addEventListener("click", middledivevent2);
+/*document.getElementById("right3").addEventListener("click", middledivevent3);
 document.getElementById("right4").addEventListener("click", middledivevent4);*/
 
 function middledivevent1()
 {
    var webcontent = "<iframe src='" + weburl[0]  + "' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'auto'></iframe>";
+       if (typeof webcontent === 'string') {
+               bodydiv.innerHTML = webcontent;
+              }
+                else {
+                    bodydiv.appendChild(webcontent);
+                     }
    if (document.getElementById("divparent")) 
           {
              console.log("Middle Div is visiable");
@@ -86,9 +92,9 @@ function middledivevent1()
            }
 }
 
-/*function middledivevent2()
+function middledivevent2()
 {
-  var webcontent = "<iframe src='" + weburl[1]  + "' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'auto'></iframe>",
+  var webcontent = "<iframe src='" + weburl[1]  + "' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'auto'></iframe>";
         console.log("display " + bodydiv);
               if (typeof webcontent === 'string') {
                bodydiv.innerHTML = webcontent;
@@ -106,7 +112,7 @@ function middledivevent1()
               player.el().appendChild(parentdiv);
               player.pause();
            }
-}*/
+}
 
 /*function middledivevent3()
 {
