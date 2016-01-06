@@ -73,7 +73,7 @@ document.getElementById("right4").addEventListener("click", middledivevent4);*/
 
 function middledivevent1()
 {
-   var webcontent = "<iframe src='" + weburl[0]  + "' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'auto'></iframe>",
+   var webcontent = "<iframe src='" + weburl[0]  + "' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'auto'></iframe>";
    if (document.getElementById("divparent")) 
           {
              console.log("Middle Div is visiable");
