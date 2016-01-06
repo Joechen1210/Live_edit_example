@@ -76,6 +76,7 @@ function middledivevent1()
        console.log("display " + webcontent);
                if (typeof webcontent === 'string') {
                    changecontent.innerHTML = webcontent;
+               }
                 else {
                     changecontent.appendChild(webcontent);
                      }
@@ -98,6 +99,7 @@ function middledivevent2()
        console.log("display " + webcontent);
                if (typeof webcontent === 'string') {
                    changecontent.innerHTML = webcontent;
+               }
                 else {
                     changecontent.appendChild(webcontent);
                      }
@@ -120,6 +122,7 @@ function middledivevent3()
        console.log("display " + webcontent);
                if (typeof webcontent === 'string') {
                    changecontent.innerHTML = webcontent;
+               }
                 else {
                     changecontent.appendChild(webcontent);
                      }
@@ -142,6 +145,7 @@ function middledivevent4()
        console.log("display " + webcontent);
                if (typeof webcontent === 'string') {
                    changecontent.innerHTML = webcontent;
+               }
                 else {
                     changecontent.appendChild(webcontent);
                      }
