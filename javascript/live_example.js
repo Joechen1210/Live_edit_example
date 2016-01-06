@@ -1,6 +1,5 @@
 videojs.plugin('firstPlugin', function() {
   var player = this,
-  webcontent,
   ishidden = false,
   overlay = document.createElement('p'),
   imageurl = [
@@ -76,6 +75,7 @@ videojs.plugin('firstPlugin', function() {
       {
     if (document.getElementById("divparent")) 
           {
+              var webcontent = weburl[i-1];
               console.log("display " + webcontent);
               var changecontent = document.getElementById("divbody");
                if (typeof webcontent === 'string') {
@@ -90,8 +90,8 @@ videojs.plugin('firstPlugin', function() {
            }
     else if (ishidden) 
           {
-            webcontent = weburl[i-1];
-    console.log("create" + webcontent);
+          var webcontent = weburl[i-1];
+         console.log("create" + webcontent);
       if (typeof webcontent === 'string') {
          bodydiv.innerHTML = webcontent;
          //bodydiv.innerHTML = "<iframe src='http://htmlpreview.github.io/?https://raw.githubusercontent.com/Joechen1210/video_overlay/master/index.html' frameborder='0' border='0' cellspacing='0' style='border-style: none' align='left'></iframe>";
