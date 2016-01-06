@@ -5,7 +5,7 @@ videojs.plugin('firstPlugin', function() {
   overlay.innerHTML = "First Plugin Working!";
   player.el().appendChild(overlay);
   
-  for(i=0;i<2;i++)
+  for(i=1;i<3;i++)
   {
     var postdiv = document.createElement('div');
     postdiv.className = 'vjs-overlay';
