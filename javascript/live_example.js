@@ -80,16 +80,17 @@ function middledivevent1()
                 else {
                     bodydiv.appendChild(webcontent);
                      }
-   if (document.getElementById("divparent")) 
+        player.el().appendChild(parentdiv);
+   /*if (document.getElementById("divparent")) 
           {
              console.log("Middle Div is visiable");
-              player.pause();
+             player.pause();
            }
       else {   
               console.log("Middle Div is Hidden");
-              player.el().appendChild(parentdiv);
+              
               player.pause();
-           }
+           }*/
 }
 
 function middledivevent2()
@@ -102,7 +103,8 @@ function middledivevent2()
                 else {
                     bodydiv.appendChild(webcontent);
                      }
-   if (document.getElementById("divparent")) 
+                     player.el().appendChild(parentdiv);
+  /* if (document.getElementById("divparent")) 
           {
              console.log("Middle Div is visiable");
               player.pause();
@@ -111,7 +113,7 @@ function middledivevent2()
               console.log("Middle Div is Hidden");
               player.el().appendChild(parentdiv);
               player.pause();
-           }
+           }*/
 }
 
 function middledivevent3()
@@ -124,7 +126,8 @@ function middledivevent3()
                 else {
                     bodydiv.appendChild(webcontent);
                      }
-   if (document.getElementById("divparent")) 
+                     player.el().appendChild(parentdiv);
+  /* if (document.getElementById("divparent")) 
           {
              console.log("Middle Div is visiable");
               player.pause();
@@ -133,7 +136,7 @@ function middledivevent3()
               console.log("Middle Div is Hidden");
               player.el().appendChild(parentdiv);
               player.pause();
-           }
+           }*/
 }
 
 function middledivevent4()
@@ -146,7 +149,8 @@ function middledivevent4()
                 else {
                     bodydiv.appendChild(webcontent);
                      }
-   if (document.getElementById("divparent")) 
+                     player.el().appendChild(parentdiv);
+   /*if (document.getElementById("divparent")) 
           {
              console.log("Middle Div is visiable");
               player.pause();
@@ -155,7 +159,7 @@ function middledivevent4()
               console.log("Middle Div is Hidden");
               player.el().appendChild(parentdiv);
               player.pause();
-           }
+           }*/
 }
    
    closebtn.onmouseup = function()
