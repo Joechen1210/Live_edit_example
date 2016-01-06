@@ -80,11 +80,9 @@ videojs.plugin('firstPlugin', function() {
           bodydiv.appendChild(webcontent);
            }
     console.log("create " + titletext[i-1]);
-    postdiv.on("click", middledivevent(webcontent));
-  }
-  
-  function middledivevent(webcontent) 
-  {
+    //postdiv.on("click", middledivevent(webcontent));
+    postdiv.onmouseup = function()
+      {
     if (document.getElementById("divparent")) 
           {
               console.log("diplay " + webcontent);
@@ -112,7 +110,11 @@ videojs.plugin('firstPlugin', function() {
               player.pause();
            }
     
+      }
   }
+  
+  //function middledivevent(webcontent) 
+
    closebtn.onmouseup = function()
       {
           console.log("triggler Info close event");
