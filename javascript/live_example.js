@@ -80,7 +80,7 @@ videojs.plugin('firstPlugin', function() {
           bodydiv.appendChild(webcontent);
            }
     console.log("create " + titletext[i-1]);
-    postdiv.addEventListener("click", middledivevent(webcontent));
+    postdiv.on("click", middledivevent(webcontent));
   }
   
   function middledivevent(webcontent) 
