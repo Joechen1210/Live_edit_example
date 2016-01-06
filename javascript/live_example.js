@@ -3,16 +3,16 @@ videojs.plugin('firstPlugin', function() {
   ishidden = false,
   overlay = document.createElement('p'),
   imageurl = [
-            "https://raw.githubusercontent.com/Joechen1210/Live_edit_example/master/Image/agenda_icon3.png", 
-            "https://raw.githubusercontent.com/Joechen1210/Live_edit_example/master/Image/FacebookIcon1.png",
-            "https://raw.githubusercontent.com/Joechen1210/Live_edit_example/master/Image/Twitter_Icon2.png",
-            "https://raw.githubusercontent.com/Joechen1210/Live_edit_example/master/Image/catering-button-questionnaire.png"
+            "http://raw.githubusercontent.com/Joechen1210/Live_edit_example/master/Image/agenda_icon3.png", 
+            "http://raw.githubusercontent.com/Joechen1210/Live_edit_example/master/Image/FacebookIcon1.png",
+            "http://raw.githubusercontent.com/Joechen1210/Live_edit_example/master/Image/Twitter_Icon2.png",
+            "http://raw.githubusercontent.com/Joechen1210/Live_edit_example/master/Image/catering-button-questionnaire.png"
             ],
   weburl = [
-            "http://htmlpreview.github.io/?https://raw.githubusercontent.com/Joechen1210/Live_edit_example/master/Example_html/example_html.html",
-            "http://htmlpreview.github.io/?https://raw.githubusercontent.com/Joechen1210/Seminar_live_example/master/Social_Network/facebook_html.html",
-            "http://htmlpreview.github.io/?https://github.com/Joechen1210/Seminar_live_example/blob/master/Social_Network/twitter_html.html",
-            "http://htmlpreview.github.io/?https://raw.githubusercontent.com/Joechen1210/Seminar_live_example/master/Social_Network/google_map_html.html"
+            "http://htmlpreview.github.io/?http://raw.githubusercontent.com/Joechen1210/Live_edit_example/master/Example_html/example_html.html",
+            "http://htmlpreview.github.io/?http://raw.githubusercontent.com/Joechen1210/Seminar_live_example/master/Social_Network/facebook_html.html",
+            "http://htmlpreview.github.io/?http://github.com/Joechen1210/Seminar_live_example/blob/master/Social_Network/twitter_html.html",
+            "http://htmlpreview.github.io/?http://raw.githubusercontent.com/Joechen1210/Seminar_live_example/master/Social_Network/google_map_html.html"
             ],
   titletext = [
                "Agenda",
@@ -41,7 +41,7 @@ videojs.plugin('firstPlugin', function() {
      	 bodydiv.className = 'vjs-overlay';
          bodydiv.className += ' model-body';
          bodydiv.id = 'divbody';
-         bodydiv.innerHTML = "<iframe src='http://htmlpreview.github.io/?https://raw.githubusercontent.com/Joechen1210/Seminar_live_example/master/Social_Network/facebook_html.html' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'auto'></iframe>";
+         bodydiv.innerHTML = "<iframe src='http://htmlpreview.github.io/?http://raw.githubusercontent.com/Joechen1210/Seminar_live_example/master/Social_Network/facebook_html.html' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'auto'></iframe>";
            
       //add close web button
       var closebtn = document.createElement('button');
