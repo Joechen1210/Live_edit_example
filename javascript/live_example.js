@@ -36,11 +36,6 @@ videojs.plugin('firstPlugin', function() {
       	  maindiv.id = 'divmain';
       
       //add web site div
-     var headerdiv = document.createElement('div');
-         headerdiv.className = 'vjs-overlay';
-         headerdiv.className += ' model-header';
-         headerdiv.id = 'divheader';
-         headerdiv.innerHTML = '<h3>Product Information</h3>';
          
      var bodydiv = document.createElement('div');
      	 bodydiv.className = 'vjs-overlay';
@@ -54,8 +49,9 @@ videojs.plugin('firstPlugin', function() {
           closebtn.id = 'btnclose';
       var closetext = document.createTextNode('x');
       closebtn.appendChild(closetext);
-      
-        parentdiv.appendChild(closebtn); 
+      parentdiv.appendChild(closebtn); 
+      maindiv.appendChild(bodydiv);
+      parentdiv.appendChild(maindiv);
         
   
   for(i=1;i<=4;i++)
@@ -64,59 +60,103 @@ videojs.plugin('firstPlugin', function() {
     postdiv.className = 'vjs-overlay';
     postdiv.className += ' vjs-overlay-right'+ i;
     postdiv.innerHTML = "<img title='" + titletext[i-1]  + "' src='" + imageurl[i-1] + "' max-width='200px' max-height='200px' width='100%' height='100%'></img>";
-    //postdiv.className += ' vjs-overlay-right' + i ;
-    
-    console.log("create"+postdiv.className);
-    player.el().appendChild(postdiv);
-        
-    console.log("create " + titletext[i-1]);
-    //postdiv.on("click", middledivevent(webcontent));
-    postdiv.onmouseup = function()
-      {
-    if (document.getElementById("divparent")) 
-          {
-              var webcontent = weburl[i-1];
-              console.log("display " + webcontent);
-              var changecontent = document.getElementById("divbody");
+    postdiv.id = 'right' + i;
+      
+  }
+
+document.getElementById("right1").addEventListener("click", middledivevent1());
+document.getElementById("right2").addEventListener("click", middledivevent2());
+document.getElementById("right3").addEventListener("click", middledivevent3());
+document.getElementById("right4").addEventListener("click", middledivevent4());
+
+function middledivevent1()
+{
+   var webcontent = weburl[0],
+       changecontent = document.getElementById("divbody");
+       console.log("display " + webcontent);
                if (typeof webcontent === 'string') {
                    changecontent.innerHTML = webcontent;
-                   //bodydiv.innerHTML = "<iframe src='http://htmlpreview.github.io/?https://raw.githubusercontent.com/Joechen1210/video_overlay/master/index.html' frameborder='0' border='0' cellspacing='0' style='border-style: none' align='left'></iframe>";
-                     } 
                 else {
                     changecontent.appendChild(webcontent);
                      }
-              ishidden = false;
-              player.pause();
-           }
-    else if (ishidden) 
+   if (document.getElementById("divparent")) 
           {
-          var webcontent = weburl[i-1];
-         console.log("create" + webcontent);
-      if (typeof webcontent === 'string') {
-         bodydiv.innerHTML = webcontent;
-         //bodydiv.innerHTML = "<iframe src='http://htmlpreview.github.io/?https://raw.githubusercontent.com/Joechen1210/video_overlay/master/index.html' frameborder='0' border='0' cellspacing='0' style='border-style: none' align='left'></iframe>";
-           } 
-      else {
-          bodydiv.appendChild(webcontent);
-           }
-        maindiv.appendChild(bodydiv);
-        parentdiv.appendChild(maindiv);
-              console.log("diplay " + webcontent);
-              player.el().removeChild(parentdiv);
-              ishidden = false;
-              player.play();
+             console.log("Middle Div is visiable");
+              player.pause();
            }
       else {   
+              console.log("Middle Div is Hidden");
               player.el().appendChild(parentdiv);
-              ishidden = true;
               player.pause();
            }
-    
-      }
-  }
-  
-  //function middledivevent(webcontent) 
+}
 
+function middledivevent2()
+{
+  var webcontent = weburl[1],
+       changecontent = document.getElementById("divbody");
+       console.log("display " + webcontent);
+               if (typeof webcontent === 'string') {
+                   changecontent.innerHTML = webcontent;
+                else {
+                    changecontent.appendChild(webcontent);
+                     }
+   if (document.getElementById("divparent")) 
+          {
+             console.log("Middle Div is visiable");
+              player.pause();
+           }
+      else {   
+              console.log("Middle Div is Hidden");
+              player.el().appendChild(parentdiv);
+              player.pause();
+           }
+}
+
+function middledivevent3()
+{
+   var webcontent = weburl[2],
+       changecontent = document.getElementById("divbody");
+       console.log("display " + webcontent);
+               if (typeof webcontent === 'string') {
+                   changecontent.innerHTML = webcontent;
+                else {
+                    changecontent.appendChild(webcontent);
+                     }
+   if (document.getElementById("divparent")) 
+          {
+             console.log("Middle Div is visiable");
+              player.pause();
+           }
+      else {   
+              console.log("Middle Div is Hidden");
+              player.el().appendChild(parentdiv);
+              player.pause();
+           }
+}
+
+function middledivevent4()
+{
+   var webcontent = weburl[3],
+       changecontent = document.getElementById("divbody");
+       console.log("display " + webcontent);
+               if (typeof webcontent === 'string') {
+                   changecontent.innerHTML = webcontent;
+                else {
+                    changecontent.appendChild(webcontent);
+                     }
+   if (document.getElementById("divparent")) 
+          {
+             console.log("Middle Div is visiable");
+              player.pause();
+           }
+      else {   
+              console.log("Middle Div is Hidden");
+              player.el().appendChild(parentdiv);
+              player.pause();
+           }
+}
+   
    closebtn.onmouseup = function()
       {
           console.log("triggler Info close event");
