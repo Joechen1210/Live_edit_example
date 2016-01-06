@@ -166,8 +166,8 @@ function middledivevent4()
       {
           console.log("triggler Info close event");
            player.el().removeChild(parentdiv);
-           ishidden = false;
-           player.play();
+           //ishidden = false;
+          // player.play();
        }
        
 });
