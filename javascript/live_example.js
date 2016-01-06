@@ -67,14 +67,13 @@ videojs.plugin('firstPlugin', function() {
   }
 
 document.getElementById("right1").addEventListener("click", middledivevent1);
-/*document.getElementById("right2").addEventListener("click", middledivevent2);
-document.getElementById("right3").addEventListener("click", middledivevent3);
+document.getElementById("right2").addEventListener("click", middledivevent2);
+/*document.getElementById("right3").addEventListener("click", middledivevent3);
 document.getElementById("right4").addEventListener("click", middledivevent4);*/
 
 function middledivevent1()
 {
    var webcontent = "<iframe src='" + weburl[0]  + "' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'auto'></iframe>",
-       changecontent = document.getElementById("divbody");
        console.log("display " + bodydiv);
               if (typeof webcontent === 'string') {
                    //changecontent.innerHTML = "<iframe src='http://htmlpreview.github.io/?https://raw.githubusercontent.com/Joechen1210/Live_edit_example/master/Example_html/example_html.html' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'auto'></iframe>";
@@ -95,17 +94,16 @@ function middledivevent1()
            }
 }
 
-/*function middledivevent2()
+function middledivevent2()
 {
   var webcontent = "<iframe src='" + weburl[1]  + "' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'auto'></iframe>",
-       changecontent = document.getElementById("divbody");
-       console.log("display " + webcontent);
+        console.log("display " + bodydiv);
               if (typeof webcontent === 'string') {
                    //changecontent.innerHTML = "<iframe src='http://htmlpreview.github.io/?https://raw.githubusercontent.com/Joechen1210/Live_edit_example/master/Example_html/example_html.html' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'auto'></iframe>";
-               changecontent.innerHTML = webcontent;
+               bodydiv.innerHTML = webcontent;
               }
                 else {
-                    changecontent.appendChild(webcontent);
+                    bodydiv.appendChild(webcontent);
                      }
    if (document.getElementById("divparent")) 
           {
@@ -117,7 +115,7 @@ function middledivevent1()
               player.el().appendChild(parentdiv);
               player.pause();
            }
-}*/
+}
 
 /*function middledivevent3()
 {
