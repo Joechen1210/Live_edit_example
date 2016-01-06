@@ -67,8 +67,8 @@ videojs.plugin('firstPlugin', function() {
   }
 
 document.getElementById('right1').addEventListener("click", middledivevent1);
-/*document.getElementById("right2").addEventListener("click", middledivevent2());
-document.getElementById("right3").addEventListener("click", middledivevent3());
+document.getElementById("right2").addEventListener("click", middledivevent2());
+/*document.getElementById("right3").addEventListener("click", middledivevent3());
 document.getElementById("right4").addEventListener("click", middledivevent4());*/
 
 function middledivevent1()
@@ -95,7 +95,7 @@ function middledivevent1()
            }
 }
 
-/*function middledivevent2()
+function middledivevent2()
 {
   var webcontent = weburl[1],
        changecontent = document.getElementById("divbody");
@@ -118,7 +118,7 @@ function middledivevent1()
            }
 }
 
-function middledivevent3()
+/*function middledivevent3()
 {
    var webcontent = weburl[2],
        changecontent = document.getElementById("divbody");
