@@ -41,7 +41,7 @@ videojs.plugin('firstPlugin', function() {
      	 bodydiv.className = 'vjs-overlay';
          bodydiv.className += ' model-body';
          bodydiv.id = 'divbody';
-         bodydiv.innerHTML = "<iframe src='" + weburl[0] + "' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'auto'></iframe>";
+         bodydiv.innerHTML = "<iframe src='http://htmlpreview.github.io/?https://raw.githubusercontent.com/Joechen1210/Live_edit_example/master/Example_html/example_html.html' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'auto'></iframe>";
            
       //add close web button
       var closebtn = document.createElement('button');
@@ -73,11 +73,11 @@ document.getElementById("right4").addEventListener("click", middledivevent4());*
 
 function middledivevent1()
 {
-   var webcontent = "<iframe src='" + weburl[0] + "' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'auto'></iframe>",
+   var webcontent = "<iframe src='http://htmlpreview.github.io/?https://raw.githubusercontent.com/Joechen1210/Live_edit_example/master/Example_html/example_html.html' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'auto'></iframe>",
        changecontent = document.getElementById("divbody");
        console.log("display " + webcontent);
               // if (typeof webcontent === 'string') {
-                   changecontent.innerHTML = "<iframe src='" + weburl[0] + "' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'auto'></iframe>";
+                   changecontent.innerHTML = "<iframe src='http://htmlpreview.github.io/?https://raw.githubusercontent.com/Joechen1210/Live_edit_example/master/Example_html/example_html.html' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'auto'></iframe>";
                //}
                 //else {
                   //  changecontent.appendChild(webcontent);
