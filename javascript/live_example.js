@@ -61,7 +61,7 @@ videojs.plugin('firstPlugin', function() {
     postdiv.className += ' vjs-overlay-right'+ i;
     postdiv.innerHTML = "<img title='" + titletext[i-1]  + "' src='" + imageurl[i-1] + "' max-width='200px' max-height='200px' width='100%' height='100%'></img>";
     postdiv.id = 'right' + i;
-      
+    console.log("create div id: " + postdiv.id);
   }
 
 document.getElementById("right1").addEventListener("click", middledivevent1());
