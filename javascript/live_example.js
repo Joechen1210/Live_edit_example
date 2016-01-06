@@ -2,7 +2,7 @@ videojs.plugin('firstPlugin', function() {
   var player = this,
   overlay = document.createElement('p'),
   weburl = [
-            "https://raw.githubusercontent.com/Joechen1210/Live_edit_example/master/Image/Agenda-Icon.jpg", 
+            "https://raw.githubusercontent.com/Joechen1210/Live_edit_example/master/Image/agenda_icon3.png", 
             "https://raw.githubusercontent.com/Joechen1210/Live_edit_example/master/Image/FacebookIcon1.png",
             "https://raw.githubusercontent.com/Joechen1210/Live_edit_example/master/Image/Twitter_Icon2.png",
             "https://raw.githubusercontent.com/Joechen1210/Live_edit_example/master/Image/catering-button-questionnaire.png"
