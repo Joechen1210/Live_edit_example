@@ -68,8 +68,8 @@ videojs.plugin('firstPlugin', function() {
 
 document.getElementById("right1").addEventListener("click", middledivevent1);
 document.getElementById("right2").addEventListener("click", middledivevent2);
-/*document.getElementById("right3").addEventListener("click", middledivevent3);
-document.getElementById("right4").addEventListener("click", middledivevent4);*/
+document.getElementById("right3").addEventListener("click", middledivevent3);
+document.getElementById("right4").addEventListener("click", middledivevent4);
 
 function middledivevent1()
 {
@@ -114,16 +114,15 @@ function middledivevent2()
            }
 }
 
-/*function middledivevent3()
+function middledivevent3()
 {
-   var webcontent = weburl[2],
-       changecontent = document.getElementById("divbody");
-       console.log("display " + webcontent);
-               if (typeof webcontent === 'string') {
-                   changecontent.innerHTML = webcontent;
-               }
+   var webcontent = "<iframe src='" + weburl[2]  + "' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'auto'></iframe>";
+        console.log("display " + bodydiv);
+              if (typeof webcontent === 'string') {
+               bodydiv.innerHTML = webcontent;
+              }
                 else {
-                    changecontent.appendChild(webcontent);
+                    bodydiv.appendChild(webcontent);
                      }
    if (document.getElementById("divparent")) 
           {
@@ -139,14 +138,13 @@ function middledivevent2()
 
 function middledivevent4()
 {
-   var webcontent = weburl[3],
-       changecontent = document.getElementById("divbody");
-       console.log("display " + webcontent);
-               if (typeof webcontent === 'string') {
-                   changecontent.innerHTML = webcontent;
-               }
+    var webcontent = "<iframe src='" + weburl[3]  + "' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'auto'></iframe>";
+        console.log("display " + bodydiv);
+              if (typeof webcontent === 'string') {
+               bodydiv.innerHTML = webcontent;
+              }
                 else {
-                    changecontent.appendChild(webcontent);
+                    bodydiv.appendChild(webcontent);
                      }
    if (document.getElementById("divparent")) 
           {
