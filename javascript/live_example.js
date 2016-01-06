@@ -41,7 +41,7 @@ videojs.plugin('firstPlugin', function() {
      	 bodydiv.className = 'vjs-overlay';
          bodydiv.className += ' model-body';
          bodydiv.id = 'divbody';
-         bodydiv.innerHTML = "<iframe src='http://htmlpreview.github.io/?http://raw.githubusercontent.com/Joechen1210/Seminar_live_example/master/Social_Network/facebook_html.html' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'auto'></iframe>";
+         bodydiv.innerHTML = "<iframe src='" + weburl[0] + "' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'auto'></iframe>";
            
       //add close web button
       var closebtn = document.createElement('button');
