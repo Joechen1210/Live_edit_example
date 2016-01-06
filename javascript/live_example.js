@@ -9,7 +9,7 @@ videojs.plugin('firstPlugin', function() {
   {
     var postdiv = document.createElement('div');
     postdiv.className = 'vjs-overlay';
-    postdiv.className += 'vjs-overlay-right' + i ;
+    postdiv.className += ' vjs-overlay-right' + i ;
     console.log("create"+postdiv.className);
     player.el().appendChild(postdiv);
   }
