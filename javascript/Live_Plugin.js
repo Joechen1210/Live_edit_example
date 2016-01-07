@@ -12,7 +12,7 @@ videojs.plugin('firstPlugin', function() {
             "http://htmlpreview.github.io/?http://raw.githubusercontent.com/Joechen1210/Live_edit_example/master/Example_html/example_html.html",
             "http://htmlpreview.github.io/?http://raw.githubusercontent.com/Joechen1210/Seminar_live_example/master/Social_Network/facebook_html.html",
             "http://htmlpreview.github.io/?http://github.com/Joechen1210/Seminar_live_example/blob/master/Social_Network/twitter_html.html",
-            "http://htmlpreview.github.io/?http://raw.githubusercontent.com/Joechen1210/Seminar_live_example/master/Social_Network/google_map_html.html"
+            "http://htmlpreview.github.io/?https://raw.githubusercontent.com/Joechen1210/Seminar_live_example/master/Social_Network/google_doc_question.html"
             ],
   titletext = [
                "Agenda",
