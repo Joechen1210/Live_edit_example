@@ -73,7 +73,7 @@ document.getElementById("right4").addEventListener("click", middledivevent4);
 
 function middledivevent1()
 {
-   var webcontent = "<iframe src='" + weburl[0]  + "' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'auto'></iframe>";
+   var webcontent = "<iframe src='" + weburl[0]  + "' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'no'></iframe>";
        if (typeof webcontent === 'string') {
                bodydiv.innerHTML = webcontent;
               }
@@ -95,7 +95,7 @@ function middledivevent1()
 
 function middledivevent2()
 {
-  var webcontent = "<iframe src='" + weburl[1]  + "' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'auto'></iframe>";
+  var webcontent = "<iframe src='" + weburl[1]  + "' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'no'></iframe>";
         console.log("display " + bodydiv);
               if (typeof webcontent === 'string') {
                bodydiv.innerHTML = webcontent;
@@ -108,7 +108,7 @@ function middledivevent2()
 
 function middledivevent3()
 {
-   var webcontent = "<iframe src='" + weburl[2]  + "' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'auto'></iframe>";
+   var webcontent = "<iframe src='" + weburl[2]  + "' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'no'></iframe>";
         console.log("display " + bodydiv);
               if (typeof webcontent === 'string') {
                bodydiv.innerHTML = webcontent;
@@ -121,7 +121,7 @@ function middledivevent3()
 
 function middledivevent4()
 {
-    var webcontent = "<iframe src='" + weburl[3]  + "' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'auto'></iframe>";
+    var webcontent = "<iframe src='" + weburl[3]  + "' width= '100%' height= '100%' marginheight= '0' marginwidth= '0' hspeace= '0' vspace= '0' frameborder= '0' scrolling= 'no'></iframe>";
         console.log("display " + bodydiv);
               if (typeof webcontent === 'string') {
                bodydiv.innerHTML = webcontent;
