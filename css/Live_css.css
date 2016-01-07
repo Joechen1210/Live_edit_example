@@ -15,7 +15,7 @@
 .vjs-overlay.vjs-overlay-right2 
 {
   position: absolute;
-  height: 15%;
+  height: 12%;
   width: 10%;
   left: auto;
   right: 0;
@@ -27,12 +27,12 @@
 .vjs-overlay.vjs-overlay-right3 
 {
   position: absolute;
-  height: 15%;
+  height: 10%;
   width: 7%;
   left: auto;
   right: 0;
-  top: 39%;
-  margin-right: 2%;
+  top: 36%;
+  margin-right: 3.5%;
   cursor: pointer;
 }
 
@@ -44,8 +44,8 @@
   width: 7%;
   left: auto;
   right: 0;
-  top: 56%;
-  margin-right: 2%;
+  top: 48%;
+  margin-right: 4%;
   cursor: pointer;
 }
 
