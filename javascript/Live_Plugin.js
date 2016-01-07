@@ -104,16 +104,6 @@ function middledivevent2()
                     bodydiv.appendChild(webcontent);
                      }
                      player.el().appendChild(parentdiv);
-  /* if (document.getElementById("divparent")) 
-          {
-             console.log("Middle Div is visiable");
-              player.pause();
-           }
-      else {   
-              console.log("Middle Div is Hidden");
-              player.el().appendChild(parentdiv);
-              player.pause();
-           }*/
 }
 
 function middledivevent3()
@@ -127,16 +117,6 @@ function middledivevent3()
                     bodydiv.appendChild(webcontent);
                      }
                      player.el().appendChild(parentdiv);
-  /* if (document.getElementById("divparent")) 
-          {
-             console.log("Middle Div is visiable");
-              player.pause();
-           }
-      else {   
-              console.log("Middle Div is Hidden");
-              player.el().appendChild(parentdiv);
-              player.pause();
-           }*/
 }
 
 function middledivevent4()
@@ -150,24 +130,12 @@ function middledivevent4()
                     bodydiv.appendChild(webcontent);
                      }
                      player.el().appendChild(parentdiv);
-   /*if (document.getElementById("divparent")) 
-          {
-             console.log("Middle Div is visiable");
-              player.pause();
-           }
-      else {   
-              console.log("Middle Div is Hidden");
-              player.el().appendChild(parentdiv);
-              player.pause();
-           }*/
 }
    
    closebtn.onmouseup = function()
       {
           console.log("triggler Info close event");
            player.el().removeChild(parentdiv);
-           //ishidden = false;
-          // player.play();
        }
        
 });
