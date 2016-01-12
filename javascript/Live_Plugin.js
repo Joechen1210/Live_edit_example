@@ -6,7 +6,7 @@ videojs.plugin('firstPlugin', function() {
             "http://raw.githubusercontent.com/Joechen1210/Live_edit_example/master/Image/agenda_icon3.png", 
             "http://raw.githubusercontent.com/Joechen1210/Live_edit_example/master/Image/FacebookIcon1.png",
             "http://raw.githubusercontent.com/Joechen1210/Live_edit_example/master/Image/Twitter_Icon2.png",
-            "http://raw.githubusercontent.com/Joechen1210/Live_edit_example/master/Image/catering-button-questionnaire.png"
+            "https://raw.githubusercontent.com/Joechen1210/Live_edit_example/master/Image/survey2_burned.png"
             ],
   weburl = [
             "http://htmlpreview.github.io/?http://raw.githubusercontent.com/Joechen1210/Live_edit_example/master/Example_html/example_html.html",
